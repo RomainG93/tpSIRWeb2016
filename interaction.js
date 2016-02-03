@@ -3,9 +3,22 @@
 // L'interacteur viendra dans un second temps donc ne vous en souciez pas au départ.
 function DnD(canvas, interactor) {
 	// Définir ici les attributs de la 'classe'
-
+  this.startX = 0;
+  this.startY = 0:
+  this.endX = 0;
+  this.endY = 0;
 	// Developper les 3 fonctions gérant les événements
+  this.onMouseUp = function(evt){
 
+  }.bind(this);
+
+  this.onMouseDown = function(evt){
+
+  }.bind(this);
+
+  this.onMouseMove = function(evt){
+
+  }.bind(this);
 	// Associer les fonctions précédentes aux évènements du canvas.
 };
 
@@ -18,6 +31,3 @@ function getMousePosition(canvas, evt) {
     y: evt.clientY - rect.top
   };
 };
-
-
-
