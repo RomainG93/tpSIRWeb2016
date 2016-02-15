@@ -7,20 +7,21 @@ canvas.height=600
 
 // Code temporaire pour tester le DnD
 new DnD(canvas);
-ctx.fillStyle = '#F0F0F0'; // set canvas' background color
-ctx.fillRect(0, 0, canvas.width, canvas.height);  // now fill the canvas
+//ctx.fillStyle = '#F0F0F0'; // set canvas' background color
+//ctx.fillRect(0, 0, canvas.width, canvas.height);  // now fill the canvas
 /////
 
 // Code temporaire pour tester l'affiche de la vue
-var rec = new Rectangle(10, 20, 100, 50, 5, '#00CCC0');
+var rec = new Rectangle(50, 50, 100, 50, 5, '#00CCC0');
 //rec.paint(ctx);
 var line = new Line(10, 20, 50, 100, 5, '#00CCC0');
-//ligne.paint(ctx);
+//line.paint(ctx);
 // tester également Dessin.
-var drawings = new Drawing();
-drawings.addShape(rec);
-drawings.addShape(line);
-drawings.showShapes();
+var drawing = new Drawing();
+drawing.addShape(rec);
+drawing.addShape(line);
+drawing.showShapes();
+drawing.paint(ctx);
 ////
 
 // Code final à utiliser pour manipuler Pencil.

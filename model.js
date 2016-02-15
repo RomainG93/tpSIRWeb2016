@@ -10,6 +10,10 @@ function Drawing(){
     this.shapes.push(shape);
   }
 
+  this.getForms = function(){
+    return this.shapes;
+  }
+
   this.showShapes = function(){
     var length = this.shapes.length;
     for (var i = 0; i < length; ++i) {
