@@ -5,15 +5,13 @@ Shape.prototype.paint = function(ctx){
 }
 
 Rectangle.prototype.paint = function(ctx) {
-    console.log(ctx.lineWidth + " --- " + ctx.strokeStyle);
     Shape.prototype.paint.call(this, ctx);
-    console.log(ctx.lineWidth + " --- " + ctx.strokeStyle);
-    ctx.rect(this.startX, this.startY, this.width, this.height);
-    ctx.stroke();
+    //console.log(ctx.lineWidth + " --- " + ctx.strokeStyle);
+    ctx.strokeRect(this.startX, this.startY, this.width, this.height);
+    //ctx.stroke();
 };
 
 Line.prototype.paint = function(ctx) {
-//TODO Manager color
     Shape.prototype.paint.call(this, ctx);
     ctx.beginPath();
     ctx.moveTo(this.startX, this.startY);
@@ -24,7 +22,7 @@ Line.prototype.paint = function(ctx) {
 
 
 Drawing.prototype.paint = function(ctx) {
-    console.log(this.getForms());
+    //console.log(this.getForms());
     ctx.fillStyle = '#F0F0F0'; // set canvas' background color
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     this.getForms().forEach(function(eltDuTableau) {
