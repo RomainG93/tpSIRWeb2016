@@ -30,3 +30,33 @@ Drawing.prototype.paint = function(ctx) {
         eltDuTableau.paint(ctx);
     });
 };
+
+function updateShapeList(shape, color, id){
+  var node = document.createElement("li");
+  node.setAttribute("id", id);
+  var textnode;
+
+  var button = document.createElement("button");
+  button.className = "btn btn-default shape-list-button";
+  var span = document.createElement("span");
+  span.className = "glyphicon glyphicon-remove-sign";
+  /*button.onclick = function() {
+        var id = this.parentNode.id;
+        console.log(id);
+    };*/
+  button.appendChild(span);
+  node.appendChild(button);
+
+  switch (shape) {
+    case 0:
+      textnode = document.createTextNode("Rectangle");
+      break;
+    case 1:
+      textnode = document.createTextNode("Line");
+      break;
+  }
+  node.appendChild(textnode);
+  node.style.color = color;
+  document.getElementById('shapeList').appendChild(node);
+  return button;
+}

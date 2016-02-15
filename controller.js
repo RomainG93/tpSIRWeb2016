@@ -69,6 +69,15 @@ function Pencil(ctx, drawing, canvas) {
 				break;
 		}
 		drawing.addShape(this.currentShape);
+		var b = updateShapeList(this.currEditingMode, this.currColour, drawing.getIndex(this.currentShape));
+		b.onclick = function() {
+			var id = this.parentNode.id;
+			delete drawing.shapes[id];
+			drawing.paint(ctx);
+			var element = document.getElementById(id);
+			element.outerHTML = "";
+			delete element;
+	    };
 		drawing.paint(ctx);
 	}
 };

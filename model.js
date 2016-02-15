@@ -14,6 +14,10 @@ function Drawing(){
     return this.shapes;
   }
 
+  this.getIndex = function(shape){
+    return this.shapes.indexOf(shape);
+  }
+
   this.showShapes = function(){
     var length = this.shapes.length;
     for (var i = 0; i < length; ++i) {

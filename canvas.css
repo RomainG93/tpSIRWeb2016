@@ -1,4 +1,7 @@
-
+.shape-list{
+  width: auto !important;
+  margin-left: 70px;
+}
 .myCanvas {
 
 }
@@ -106,4 +109,3 @@ form {
   -moz-border-radius-bottomright: 4px;
   border-bottom-right-radius: 4px;
 }
-
