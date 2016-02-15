@@ -2,12 +2,29 @@
 var editingMode = { rect: 0, line: 1 };
 
 function Pencil(ctx, drawing, canvas) {
-	this.currEditingMode = editingMode.rect;
+	this.currEditingMode = editingMode.line;
 	this.currLineWidth = 5;
 	this.currColour = '#000000';
 	this.currentShape = 0;
 
 	// Liez ici les widgets à la classe pour modifier les attributs présents ci-dessus.
+	var pencil = this;
+	document.getElementById('butRect').onclick = function(){
+		pencil.currEditingMode = editingMode.rect;
+	}
+
+	document.getElementById('butLine').onclick = function(){
+		pencil.currEditingMode = editingMode.line;
+	}
+
+	document.getElementById('spinnerWidth').onchange = function(){
+		pencil.currLineWidth = this.value;
+	}
+
+	document.getElementById('colour').onchange = function(){
+		pencil.currColour = this.value;
+	}
+
 
 	new DnD(canvas, this);
 
