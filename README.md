@@ -33,7 +33,7 @@ On peut choisir la couleur du trait, ainsi que son épaisseur. On peut supprimer
     </ul>
   <li><b>jquery-2.1.3.min.js</b></li>
   <li><b>main.js</b></li>
-  <li><b>model.js : </b> Définir les concepts du dessin et ses propriétés (couleur, etc.). Le modèle ne doit pas dépendre d'une quelconque librairie graphique, il est indépendant de ces possibles représentations graphiques. </li>
+  <li><b>model.js : </b> Définit les concepts du dessin et ses propriétés (couleur, etc.). Le modèle ne doit pas dépendre d'une quelconque librairie graphique, il est indépendant de ces possibles représentations graphiques. </li>
   <ul>
     <li>Implémentation des 4 classes du modèle : Rectangle, Line, Drawing et Shapes.</li>
   </ul>
