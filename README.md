@@ -37,7 +37,7 @@ On peut choisir la couleur du trait, ainsi que son épaisseur. On peut supprimer
   <ul>
     <li>Implémentation des 4 classes du modèle : Rectangle, Line, Drawing et Shapes</li>
   </ul>
-  <li><b>view.js :</b> Représentation graphique possible du modèle. On peut évidemment avoir plusieurs vues d'un même modèle. Dans notre cas, la vue va consister à peindre dans un canvas HTML5 les formes du modèle</li>
+  <li><b>view.js :</b> Représentation graphique possible du modèle. On peut évidemment avoir plusieurs vues d'un même modèle. Ici, la vue va consister à peindre dans un canvas HTML5 les formes du modèle</li>
    <ul>
     <li>Implémentation des fonctions paint à ajouter au modèle choisi</li>
     <li>Ajout d'une fonction qui met à jour la liste des formes prenant en paramètres la forme, le couleur et l'id (attribut du fichier HTML)</li>
